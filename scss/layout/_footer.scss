@@ -1,0 +1,84 @@
+@use '../utils' as var;
+
+.footer {
+  @include var.flex-column;
+  position: relative;
+  background: var.$prim-blue-700;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13rem;
+  gap: 1rem;
+  max-width: 80%;
+}
+
+.footer-logo {
+  max-width: 50%;
+  margin-left: 1rem;
+}
+
+.location {
+  @include var.flex-row;
+  gap: 1rem;
+}
+
+.location-icon {
+  align-self: flex-start;
+  margin-top: .2rem;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.number-container,
+.email-icon-container
+{
+  display: flex;
+  gap: .8rem;
+}
+
+.phone-icon {
+ max-width: 5%;
+}
+
+.footer-nav {
+  margin: 3rem 0;
+}
+
+.footer-container-left,
+.footer-container-right
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-container-right {
+  margin-top: 2.5rem;
+}
+
+.contact-icon {
+  @include var.flex-row;
+  gap: 1rem;
+  width: 20%;
+  margin: 2rem 0;
+}
+
+.fab {
+  border: 1px solid var.$white;
+  border-radius: 100%;
+  padding: .5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

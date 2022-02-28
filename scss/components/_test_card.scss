@@ -1,0 +1,34 @@
+@use '../utils' as var;
+
+.test-cards {
+  background: var.$prim-blue-600;
+  max-width: 72%;
+  border-radius: .2rem;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+}
+
+.quotes {
+  width: 7%;
+  position: relative;
+  right: 8.2rem;
+}
+
+.test-desc {
+  margin-bottom: 1.5rem;
+}
+
+.test-profile-card {
+  @include var.flex-row;
+  justify-content: flex-start;
+  gap: .8rem;
+}
+
+.profile-img {
+  width: 11%;
+  border-radius: 100%;
+}
+
+.profile-name {
+  margin-bottom: .5rem;
+}

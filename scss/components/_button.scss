@@ -1,0 +1,9 @@
+@use '../utils' as var;
+
+.btn {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  color: var.$white;
+  border: none;
+  background: linear-gradient(to right, var.$acc-cyan, var.$acc-blue);
+}

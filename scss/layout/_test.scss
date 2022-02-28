@@ -1,0 +1,7 @@
+@use '../utils' as var;
+
+.test {
+  @include var.flex-column;
+  margin-bottom: 14rem;
+}
+

@@ -1,0 +1,13 @@
+@use '../utils' as var;
+
+.service-card {
+  @include var.flex-column;
+  gap: 1.2rem;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+
+.service-img {
+  width: 20%;
+}
+

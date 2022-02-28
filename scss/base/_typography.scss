@@ -1,0 +1,88 @@
+@use '../utils' as var;
+
+/* Raleway */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Open Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: var.$open-sans, sans-serif;
+  color: var.$white;
+  font-size: .9rem;
+}
+
+.hero-header,
+.hero-desc,
+.service-header,
+.service-desc,
+{
+  text-align: center;
+}
+
+.hero-header,
+.service-header,
+.prod-header,
+.email-header,
+.btn
+{
+  font-family: var.$raleway, sans-serif;
+  font-weight: 700;
+}
+
+.hero-header {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.hero-desc,
+.service-desc,
+.prod-top,
+.prod-bot,
+.test-desc,
+.email-desc,
+.location-desc
+{
+  line-height: 1.6;
+}
+
+.prod-header {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.test-desc {
+  font-size: .7rem;
+}
+
+.profile-name {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.profile-job {
+  font-size: .6rem;
+}
+
+.nav-link {
+  font-size: .7rem;
+}
+
+.email-header {
+  font-size: 1rem;
+}
+
+.email-desc {
+  font-size: .85rem;
+  text-align: center;
+}
+
+.footer-nav-link {
+  font-size: 1rem;
+}
+
+.fab {
+  font-size: 1rem;
+}

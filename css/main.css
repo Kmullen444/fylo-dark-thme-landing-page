@@ -1,0 +1,415 @@
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+/* Primary color */
+/* intro and email */
+/* main bg */
+/* test bg */
+/* footer bg */
+/* Accent colors */
+/* white */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.hero-header,
+.hero-desc,
+.service-header,
+.service-desc {
+  text-align: center;
+}
+
+.hero-header,
+.service-header,
+.prod-header,
+.email-header,
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.hero-header {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.hero-desc,
+.service-desc,
+.prod-top,
+.prod-bot,
+.test-desc,
+.email-desc,
+.location-desc {
+  line-height: 1.6;
+}
+
+.prod-header {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.test-desc {
+  font-size: 0.7rem;
+}
+
+.profile-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.profile-job {
+  font-size: 0.6rem;
+}
+
+.nav-link {
+  font-size: 0.7rem;
+}
+
+.email-header {
+  font-size: 1rem;
+}
+
+.email-desc {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer-nav-link {
+  font-size: 1rem;
+}
+
+.fab {
+  font-size: 1rem;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.btn {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+
+.service-img {
+  width: 20%;
+}
+
+.test-cards {
+  background: #202a3c;
+  max-width: 72%;
+  border-radius: 0.2rem;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+}
+
+.quotes {
+  width: 7%;
+  position: relative;
+  right: 8.2rem;
+}
+
+.test-desc {
+  margin-bottom: 1.5rem;
+}
+
+.test-profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.profile-img {
+  width: 11%;
+  border-radius: 100%;
+}
+
+.profile-name {
+  margin-bottom: 0.5rem;
+}
+
+.email-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9999;
+  background: #1c2431;
+  max-width: 90%;
+  padding: 2rem 0;
+  border-radius: 0.3rem;
+  top: -10rem;
+}
+
+.email-desc {
+  padding: 1rem 1.5rem;
+}
+
+.email-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.input-container {
+  height: 3rem;
+  width: 98%;
+  background: white;
+  border-radius: 2rem;
+}
+
+.email-input {
+  padding: 1rem 5.8rem 1rem 1.4rem;
+  border-radius: 2rem;
+  border: none;
+  text-align: bottom;
+}
+
+.nav-container,
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.nav-logo {
+  width: 30%;
+}
+
+.nav-list {
+  gap: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 5rem;
+}
+
+.hero-img {
+  max-width: 90%;
+}
+
+.hero-header {
+  padding: 0 1rem;
+}
+
+.hero-desc {
+  padding: 1rem 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.services {
+  margin-top: 4rem;
+  margin-bottom: 9rem;
+}
+
+.prod-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.prod-img {
+  max-width: 90%;
+}
+
+.prod-desc-container {
+  padding: 0 1rem 1rem;
+}
+
+.prod-header,
+.prod-top,
+.prod-bot {
+  margin-bottom: 1rem;
+}
+
+.prod-link {
+  color: #65e2d9;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #65e2d9;
+}
+
+.arrow-icon {
+  padding: 0 0.1rem 0;
+  width: 5.5%;
+  top: 0.3rem;
+  position: relative;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #0b1523;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13rem;
+  gap: 1rem;
+  max-width: 80%;
+}
+
+.footer-logo {
+  max-width: 50%;
+  margin-left: 1rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location-icon {
+  align-self: flex-start;
+  margin-top: 0.2rem;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.number-container,
+.email-icon-container {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.phone-icon {
+  max-width: 5%;
+}
+
+.footer-nav {
+  margin: 3rem 0;
+}
+
+.footer-container-left,
+.footer-container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-container-right {
+  margin-top: 2.5rem;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 20%;
+  margin: 2rem 0;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.bg-curvy {
+  height: 100%;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(to bottom, #1c2431 30%, #181f2a 70%);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+@use '../utils' as var;
+
+
+.hero-section {
+  @include var.flex-column;
+  padding: 3rem 0 5rem;
+}
+
+.hero-img {
+  max-width: 90%;
+}
+
+.hero-header {
+  padding:0 1rem;
+}
+
+.hero-desc {
+  padding: 1rem 1.8rem;
+  margin-bottom: 1rem;
+}
+

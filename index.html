@@ -5,28 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css" media="all">
+  <link rel="stylesheet" href="./css/main.css" media="all">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="bg-curvy">
     <header class="nav-container">
       <img class="nav-logo" src="./images/logo.svg" alt="fylo logo">
-      <nav class="nav">
-        <ul class="nav-links">
-          <li class="nav-link">
-            <a href="#">Features</a>
+      <nav class="header-list">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
           </li>
-          <li class="nav-link">
-            <a href="#">Team</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
           </li>
-          <li class="nav-link">
-            <a href="#">Sign In</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
           </li>
         </ul>
       </nav>
@@ -36,18 +32,18 @@
       <img class="hero-img" src="./images/illustration-intro.png" alt="intro illustration for people putting documents in folder">
       <h1 class="hero-header">All our files in one secure location, accessible anywhere.</h1>
       <p class="hero-desc">
-        Fylo stores all your most important files in one secure and collaborate 
-        with friends family, and co-workers.
+        Fylo stores all your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends family, and 
+        co-workers.
       </p>
       <button class="btn hero-btn" type="button">Get Started</button>
     </section>
   </div>
 
   <section class="services">
-    <div class="service-container">
 
       <div class="service-card card">
-        <img class="service-img" src="./images/icon-any-file.svg" alt="computer and phone illustration">
+        <img class="service-img" src="./images/icon-access-anywhere.svg" alt="computer and phone illustration">
         <h2 class="service-header">Access your files, anywhere</h2>
         <p class="service-desc">
           The ability to use a smartphone,tablet, or computer to access your account
@@ -81,7 +77,7 @@
           allowing for all file types to be securely stroed and shared.
         </p>
       </div>
-    </div>
+
   </section>
 
   <section class="prod-container">
@@ -98,11 +94,17 @@
           live collaboration. No email attachments required.
         </p>
       </div>
+      <div class="prod-link-container">
+        <a class="prod-link" href="">
+          See how Fylo works
+          <img class="arrow-icon" src="./images/icon-arrow.svg" alt="arrow icon">
+        </a>
+      </div>
     </div>
   </section>
 
   <section class="test">
-    <img class="test-img quotes" src="./images/bg-quote.png" alt="pair of double quotes">
+    <img class="test-img quotes" src="./images/bg-quotes.png" alt="pair of double quotes">
 
     <div class="test-cards">
       <p class="test-desc">
@@ -145,7 +147,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="email-card">
       <h2 class="email-header">Get early access today</h2>
       <p class="email-desc">
@@ -156,7 +158,7 @@
       <div class="email-input-container">
         <div class="input-container">
           <label for="email"></label>
-          <input id="" type="email" name="email" placeholder="email@example.com">
+          <input id="email" class="email-input" type="email" name="email" placeholder="email@example.com">
         </div>
         <button class="email-btn btn" type="submit">Get Started For Free</button>
       </div>
@@ -186,27 +188,27 @@
       <nav class="footer-nav">
         <ul>
           <div class="footer-container-left">
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">About Us</a>
             </li>
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Jobs</a>
             </li>
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Press</a>
             </li>
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Blog</a>
             </li>
           </div>
           <div class="footer-container-right">
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Contact Us</a>
             </li>
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Terms</a>
             </li>
-            <li class="nav-link foot-nav-link">
+            <li class="nav-link footer-nav-link">
               <a href="">Privacy</a>
             </li>
           </div>
@@ -227,7 +229,7 @@
     </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="kevinmullen.net">Kevin Mullen</a>.
     </p>
   </footer>
 </body>

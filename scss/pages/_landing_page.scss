@@ -1,0 +1,11 @@
+@use '../base';
+@use '../layout';
+@use '../utils' as var;
+
+.bg-curvy{
+  height: 100%;
+  background-image: url('../images/bg-curvy-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(to bottom, var.$prim-blue-300 30%, var.$prim-blue-500 70%);
+}
