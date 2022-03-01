@@ -4,24 +4,36 @@
   background: var.$prim-blue-600;
   max-width: 72%;
   border-radius: .2rem;
-  margin-bottom: 2rem;
-  padding: 1.4rem;
+  margin-bottom: 2em;
+  padding: 1.4em;
+  
+  @include var.desktop-up {
+    gap: 2em;
+    width: 20%;
+    padding: 2rem 1.7rem;
+  }
 }
 
 .quotes {
-  width: 7%;
+  max-width: 7%;
   position: relative;
-  right: 8.2rem;
+  right: 8.4em;
+
+  @include var.desktop-up {
+    z-index: -999;
+    left: 6.7em;
+    top: -10em;
+  }
 }
 
 .test-desc {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 .test-profile-card {
   @include var.flex-row;
   justify-content: flex-start;
-  gap: .8rem;
+  gap: .8em;
 }
 
 .profile-img {
@@ -30,5 +42,5 @@
 }
 
 .profile-name {
-  margin-bottom: .5rem;
+  margin-bottom: .5em;
 }

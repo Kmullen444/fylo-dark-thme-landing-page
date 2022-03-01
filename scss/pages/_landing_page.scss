@@ -5,10 +5,23 @@
 .bg-curvy{
   background-image: url('../images/bg-curvy-mobile.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100% 55%;
+  background-size: 100% ;
+  @include var.flex-column;
+
+  @include var.desktop-up {
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: bottom;
+    width: 100%;
+  }
 }
 
 body {
-  background: linear-gradient(to bottom, var.$prim-blue-300 10%, var.$prim-blue-500 10%);
+  background: linear-gradient(to bottom, var.$prim-blue-300 11.2%, var.$prim-blue-500 11.2%);
 
+  @include var.flex-column;
+
+  @include var.desktop-up {
+    background: linear-gradient(to bottom, var.$prim-blue-300 33%, var.$prim-blue-500 33%);
+  }
 }

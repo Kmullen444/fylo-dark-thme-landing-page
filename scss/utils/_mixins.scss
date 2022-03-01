@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 @mixin flex-column {
@@ -16,3 +17,8 @@
  text-decoration: none;
  color: var.$white;
 }
+
+@mixin desktop-up{
+  @media(min-width: 559px) { @content; }
+}
+

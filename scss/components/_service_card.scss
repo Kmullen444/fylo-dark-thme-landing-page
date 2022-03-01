@@ -1,13 +1,34 @@
 @use '../utils' as var;
 
+.services {
+  @include var.desktop-up {
+    @include var.flex-row;
+    justify-content: space-around;
+    max-width: 60%;
+    gap: 8em;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
 .service-card {
   @include var.flex-column;
-  gap: 1.2rem;
-  margin-bottom: 5rem;
+  gap: 1.2em;
+  margin-bottom: 5em;
   padding: 0 1rem;
+
+  @include var.desktop-up {
+    max-width: 41%;
+  }
+}
+
+.service-desc {
+  @include var.desktop-up {
+    width: 85%;
+  }
 }
 
 .service-img {
-  width: 20%;
+  max-width: 20%;
 }
 

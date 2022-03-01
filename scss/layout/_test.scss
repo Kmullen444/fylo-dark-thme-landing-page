@@ -2,6 +2,13 @@
 
 .test {
   @include var.flex-column;
-  margin-bottom: 14rem;
+  margin-bottom: 14em;
+
+  @include var.desktop-up {
+    @include var.flex-row;
+    width: 100%;
+    margin-bottom: 20em;
+    gap: 3rem;
+  }
 }
 

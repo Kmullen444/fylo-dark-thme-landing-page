@@ -6,30 +6,76 @@
   z-index: 9999;
   background: var.$prim-blue-300;
   max-width: 90%;
-  padding: 2rem 0;
+  padding: 2em 0;
   border-radius: .3rem;
-  top: -10rem;
+  top: -12em;
+
+  @include var.desktop-up {
+    width: 50%;
+  }
+}
+
+.email-header {
+  @include var.desktop-up {
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
 }
 
 .email-desc {
-  padding: 1rem 1.5rem;
+  padding: 1em 1.5em;
+
+  @include var.desktop-up {
+    width: 80%;
+    margin-bottom: 1em;
+    }
 }
 
 .email-input-container {
   @include var.flex-column;
-  gap: 1.5rem;
+  gap: 1.5em;
+
+  @include var.desktop-up {
+    @include var.flex-row;
+    margin-bottom: 1em;
+    width: 90%;
+    gap : 2em;
+  }
 }
 
 .input-container {
-  height: 3rem;
+  height: 3em;
   width: 98%;
   background: var.$white;
   border-radius: 2rem;
+
+  @include var.desktop-up {
+    height: 4em;
+    width: 60%;
+  }
 }
 
 .email-input {
-  padding: 1rem 5.8rem 1rem 1.4rem;
+  padding: 1em 5.8em 1em 1.4em;
   border-radius: 2rem;
   border: none;
   text-align: bottom;
+
+  @include var.desktop-up {
+    padding: 1.6em 25em 1.6em 1.4em;
+  }
+}
+
+.error-container {
+  align-self: center;
+
+  @include var.desktop-up {
+    margin-left: 7em;
+    align-self: flex-start;
+  }
+}
+
+.error {
+  color: var.$acc-red;
+  opacity: 0;
 }

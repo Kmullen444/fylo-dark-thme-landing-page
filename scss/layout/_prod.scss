@@ -2,33 +2,48 @@
 
 .prod-container {
   @include var.flex-column;
-  gap: 4rem;
-  margin-bottom: 8rem;
+  gap: 4em;
+  margin-bottom: 8em;
+
+  @include var.desktop-up {
+    @include var.flex-row;
+    margin-bottom: 12em;
+  }
 }
 .prod-img {
   max-width: 90%;
 }
 
 .prod-desc-container {
-  padding: 0 1rem 1rem;
+  padding: 0 1em 1em;
+
+  @include var.desktop-up {
+    max-width: 40%;
+  }
+}
+
+.prod-header {
+  @include var.desktop-up {
+    max-width: 45%;
+  }
 }
 
 .prod-header,
 .prod-top,
 .prod-bot
 {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .prod-link {
   color: var.$acc-cyan;
-  padding-bottom: .2rem;
+  padding-bottom: .4em;
   border-bottom: 1px solid var.$acc-cyan;
 }
 
 .arrow-icon {
-  padding: 0 .1rem 0;
-  width: 5.5%;
-  top: .3rem;
+  padding: 0 .3em 0;
+  max-width: 5.5%;
+  top: .3em;
   position: relative;
 }

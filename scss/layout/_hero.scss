@@ -3,19 +3,32 @@
 
 .hero-section {
   @include var.flex-column;
-  padding: 3rem 0 5rem;
+  padding: 3em 0 5em;
+  gap: 2em;
+
+  @include var.desktop-up {
+    max-width: 80%;
+    margin-bottom: 4em;
+  }
 }
 
 .hero-img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .hero-header {
-  padding:0 1rem;
+  @include var.desktop-up {
+    max-width: 60%;
+  }
 }
 
 .hero-desc {
-  padding: 1rem 1.8rem;
-  margin-bottom: 1rem;
+  padding: 1em 0;
+  margin-bottom: 1em;
+
+  @include var.desktop-up {
+    max-width: 55%;
+    padding: 0 .5em;
+  }
 }
 
