@@ -336,6 +336,7 @@ a {
 .footer-logo {
   max-width: 50%;
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .location {
@@ -405,11 +406,13 @@ a {
 }
 
 .bg-curvy {
-  height: 100%;
   background-image: url("../images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background: linear-gradient(to bottom, #1c2431 30%, #181f2a 70%);
+}
+
+body {
+  background: linear-gradient(to bottom, #1c2431 10%, #181f2a 10%);
 }
 
 /*# sourceMappingURL=main.css.map */

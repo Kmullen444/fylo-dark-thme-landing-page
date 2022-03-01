@@ -1,9 +1,0 @@
-@use '../utils' as var;
-
-.email-card {
-  @include var.flex-column;
-  position: relative;
-  z-index: 9999;
-  background: var.$prim-blue-300;
-  max-width: 90%;
-}
