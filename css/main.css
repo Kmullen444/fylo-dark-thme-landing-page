@@ -565,7 +565,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 13em;
-  gap: 1em;
+  gap: 2em;
   max-width: 80%;
 }
 @media (min-width: 559px) {
@@ -624,10 +624,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin-top: 2em;
 }
 @media (min-width: 559px) {
   .contacts-container {
     width: 15%;
+    margin-top: 0;
   }
 }
 
@@ -647,15 +649,15 @@ a {
 }
 
 .footer-nav {
-  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 5em;
 }
 @media (min-width: 559px) {
   .footer-nav {
+    flex-direction: row;
+    gap: 3em;
     margin: 0;
-  }
-  .footer-nav ul {
-    display: flex;
-    gap: 6em;
   }
 }
 
@@ -666,12 +668,18 @@ a {
   gap: 1em;
 }
 
-.footer-container-right {
-  margin-top: 2.5em;
-}
 @media (min-width: 559px) {
   .footer-container-right {
     margin-top: 0;
+  }
+}
+
+.footer-container-left {
+  margin-top: 2em;
+}
+@media (min-width: 559px) {
+  .footer-container-left {
+    margin: 0 0 2em;
   }
 }
 
@@ -680,9 +688,16 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  align-self: center;
   gap: 1em;
-  width: 20%;
-  margin: 2rm 0;
+  width: 90%;
+  margin: 2em 0;
+}
+@media (min-width: 559px) {
+  .contact-icon {
+    width: 20%;
+    margin: 0 0 4em;
+  }
 }
 
 .fab {

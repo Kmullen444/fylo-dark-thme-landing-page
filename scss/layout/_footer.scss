@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 13em;
-  gap: 1em;
+  gap: 2em;
   max-width: 80%;
 
   @include var.desktop-up {
@@ -63,11 +63,11 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-
+  margin-top: 2em;
   @include var.desktop-up {
     width: 15%;
+    margin-top: 0;
   }
-  
 }
 
 .number-container,
@@ -86,15 +86,15 @@
 }
 
 .footer-nav {
-  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 5em;
 
   @include var.desktop-up {
+    flex-direction: row;
+    gap: 3em;
     margin: 0;
-    ul {
-      display: flex;
-      gap: 6em;
     }
-  }
 }
 
 .footer-container-left,
@@ -106,18 +106,31 @@
 }
 
 .footer-container-right {
-  margin-top: 2.5em;
 
   @include var.desktop-up {
     margin-top: 0;
   }
 }
 
+.footer-container-left {
+  margin-top: 2em;
+
+  @include var.desktop-up {
+    margin: 0 0 2em;
+  }
+}
+
 .contact-icon {
   @include var.flex-row;
+  align-self: center;
   gap: 1em;
-  width: 20%;
-  margin: 2rm 0;
+  width: 90%;
+  margin: 2em 0;
+
+  @include var.desktop-up {
+    width: 20%;
+    margin: 0 0 4em;
+  }
 }
 
 .fab {
