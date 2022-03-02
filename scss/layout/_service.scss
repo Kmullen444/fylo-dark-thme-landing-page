@@ -1,5 +1,16 @@
+@use '../utils' as *;
+
 .services {
   margin-top: 4em;
   margin-bottom: 9em;
+  @include desktop-up {
+    @include flex-row;
+    justify-content: space-around;
+    gap: 8em;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 80%;
+    flex-basis: 100%;
+  }
 }
 

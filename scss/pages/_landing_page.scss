@@ -22,6 +22,6 @@ body {
   @include var.flex-column;
 
   @include var.desktop-up {
-    background: linear-gradient(to bottom, var.$prim-blue-300 33%, var.$prim-blue-500 33%);
+    background: linear-gradient(to bottom, var.$prim-blue-300 34%, var.$prim-blue-500 34%);
   }
 }

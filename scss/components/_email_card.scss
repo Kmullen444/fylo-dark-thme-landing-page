@@ -11,7 +11,7 @@
   top: -12em;
 
   @include var.desktop-up {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -51,7 +51,7 @@
 
   @include var.desktop-up {
     height: 4em;
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -62,7 +62,7 @@
   text-align: bottom;
 
   @include var.desktop-up {
-    padding: 1.6em 25em 1.6em 1.4em;
+    padding: 1.6em 17.5em 1.6em .6em;
   }
 }
 

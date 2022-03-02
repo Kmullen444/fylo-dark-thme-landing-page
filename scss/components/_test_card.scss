@@ -2,14 +2,14 @@
 
 .test-cards {
   background: var.$prim-blue-600;
-  max-width: 72%;
+  max-width: 75%;
   border-radius: .2rem;
   margin-bottom: 2em;
-  padding: 1.4em;
+  padding: 1.2em;
   
   @include var.desktop-up {
-    gap: 2em;
-    width: 20%;
+    gap: 1.7em;
+    width: 100%;
     padding: 2rem 1.7rem;
   }
 }
@@ -21,8 +21,8 @@
 
   @include var.desktop-up {
     z-index: -999;
-    left: 6.7em;
-    top: -10em;
+    left: 5.5em;
+    top: -9em;
   }
 }
 
