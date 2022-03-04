@@ -216,6 +216,9 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 .service-card {
   display: flex;
@@ -524,6 +527,10 @@ a {
   padding-bottom: 0.4em;
   border-bottom: 1px solid #65e2d9;
 }
+.prod-link:hover {
+  color: white;
+  text-decoration: none;
+}
 
 .arrow-icon {
   padding: 0 0.3em 0;
@@ -550,6 +557,15 @@ a {
     margin-bottom: 20em;
     gap: 2rem;
   }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .footer {
